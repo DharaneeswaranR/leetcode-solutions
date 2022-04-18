@@ -9,4 +9,16 @@ class Solution:
             hashset.add(num)
             
         return False
+
+
+"""
+Approach:
+
+As this problem requires searching if an value is present, we can use hashset (O(1) for seaching) 
+to store the values present in the array while simultaneously checking if the value is already 
+present in the array.
+
+Time complexity - O(n)
+
+"""
         
