@@ -12,7 +12,7 @@ class Solution:
 """
 Approach:
 
-Naive - We can use bruteforce approach using to nested loops to find which two numbers
+Naive - We can use bruteforce approach using two nested loops to find which two numbers
 adds to the target.
 
 Using Hashmap -
@@ -22,6 +22,6 @@ diff = target - n
 We can use hashmap to store the difference(key) and index(val) and search
 if the difference is present in the hashmap.
 
-Time hashmaplexity - O(n)
+Time complexity - O(n)
 
 """
