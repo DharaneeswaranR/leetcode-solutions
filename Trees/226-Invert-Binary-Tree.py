@@ -12,4 +12,25 @@ class Solution:
             self.invertTree(root.right)
         
         return root
+    
+
+# BFS solution
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return root
+
+        queue = deque([root])
+
+        while queue:
+            node = queue.popleft()
+            node.left, node.right = node.right, node.left
+
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+        
+        return root
+
             
